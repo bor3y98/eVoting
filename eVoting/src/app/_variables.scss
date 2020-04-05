@@ -1,0 +1,16 @@
+$dash-bg1: #2B3442;
+$dash-bg2: #252D39;
+$dash-bg3: #596275;
+$dash-text: #007BFF;
+
+@mixin bg-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

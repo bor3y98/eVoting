@@ -1,0 +1,40 @@
+.chart-container{
+    width: 60%;
+    height: 480px;
+    margin: 0 auto;
+}
+
+.my{
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.underdevelopment {
+    background-color: #7f5fcb;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    left: -50px;
+    top: 40px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-box-shadow: 0 0 10px #888;
+    -moz-box-shadow: 0 0 10px #888;
+    box-shadow: 0 0 10px #888;
+  }
+  .underdevelopment a {
+    border: 1px solid #313153;
+    color: #fff;
+    font: bold 100% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: block;
+    margin: 1px 0;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 5px #444;
+    cursor: default;
+  }

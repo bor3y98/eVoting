@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../styles/createVotE.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <script src="../js/buttons.js"></script>
+
+    <div class="background">
+        <div class="word">Create New Poll</div>
+         <form name="myform" action="" onsubmit="return validateForm()" method="GET" required>
+            <div class="Rectangles">
+                <div>
+                    <div class="title">TITLE</div>
+                    <div><input type="text" id="input1" class="etitle" placeholder="Enter Poll title..."></div>
+                </div>
+                <div>
+                     <div class="option">OPTIONS</div>
+                     <div class="pic">
+                        <div id="new"class="name"><input id="input2" type="text" class="Nameoption" placeholder="Enter Option..."></div> 
+                        <div class="choosefile">
+                            <i class="fa fa-cloud-upload" id= ></i> 
+                          
+                        </div>
+                    </div>
+                    <div id="btn" class="add">
+                    <p onclick="myFunction()"> + Add Option</p>
+                    
+                    </div>
+                </div>
+                <div>
+                    <div class="access">ACCESS</div>
+                        <div class="twoRec">
+                            <div>
+                                <div class="r1">
+                                    <div class="pub">
+                                        <img src="../assets/images/ic-public-non.png"srcset="ic-public-non@2x.png 2x,ic-public-non@3x.png 3x"class="ic-public-non">
+                                        <div class="public">Public</div>
+                                        <div class="anyOne">Anyone can vote</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r2">
+                                <div>
+                                    <img src="../assets/images/ic-private-non1.png"srcset="ic-private-non@2x.png 2x,ic-private-non@3x.png 3x"class="ic-private-non1">
+                                    <div class="private">Private</div>
+                                    <div class="only">Only with link</div> 
+                                </div> 
+                            </div>
+                        </div>
+                </div>
+
+                <div>
+                    <div class="operation">OPERATION DATES</div>
+                </div>
+            </div>
+        </form>
+            <div>
+                <div class="RectangleFooter">
+                    <div><input class="Publish"type="submit" value="Publish Poll"></div>
+                    <div><button class="preview">Preview</button></div>
+                </div>
+            </div>
+</body>
+</html>

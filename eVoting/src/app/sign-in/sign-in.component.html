@@ -1,0 +1,36 @@
+ <a href="" data-toggle="modal" data-target="#modal">login </a>
+ <div class="modal" id="modal" data-backdrop="false" data-keyboard="false">
+
+   <!--model-->
+   <div class="modal-body">
+     <div class="form-wrapper">
+       <img src="../../assets/ic-close.svg" class="ic-close" data-dismiss="modal">
+       <img src="https://lh3.googleusercontent.com/d/1sgSh-U5tyBMI_fxDS4l1cTuf2M-ttSHv=s220?authuser=0" alt="logo"
+         class="ic-logo" />
+       <div class="login">
+         <p class="word">Log in into your account</p>
+         <p class="word2">Log in to manage your polls</p>
+       </div>
+
+       <form [formGroup]='signInForm' (submit)='login()'>
+         <div class="email">
+           <label htmlFor="email">EMAIL</label><br>
+           <input (change)='onTextChange($event)' placeholder="Email" type="email" name="email" formControlName="email">
+           <div class="invalid-feedback" id='email-feedback'>This feild is requried</div>
+         </div>
+
+         <div class="password">
+           <label htmlFor="password">PASSWORD</label><br>
+           <input (change)='onTextChange($event)' placeholder="Password" type="password" name="password"
+             formControlName="password">
+           <div class="invalid-feedback" id='password-feedback'>This feild is requried</div>
+         </div>
+         <a href="" class="forget">Forget?</a>
+         <div class="createAccount">
+           <button type="submit" class="btn">Log In</button>
+           <div class="invalid-feedback" id='login-feedback'></div>
+           <small class="acc">Don't have an account? <a href="">Get One Now</a></small>
+         </div>
+       </form>
+     </div>
+   </div>

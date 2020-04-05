@@ -1,0 +1,225 @@
+
+
+body {
+  width: 1440px;
+  height:1200px ;
+  background-color: #f0f1f7;
+
+}
+
+
+
+.app{
+  width: 1440px;
+  height: 1200px;
+  margin-right: auto;
+  background-color: #f0f1f7;
+  }
+.heading {
+    width: 216px;
+    height: 33px;
+    font-family: "Open Sans";
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style:normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #343643;
+    padding-top: 20px;
+    padding-left: 144px;
+    position: relative;
+    top: 40px;
+    display: inline-block;
+    white-space: nowrap;
+
+}
+
+
+  .form {
+    width: 1151px;
+    height: 1135px;
+    border-radius: 6px;
+    box-shadow: 0 1px 15px 0 var(--charocal-grey-8);
+    background-color: #fff;
+    margin-left: 144px;
+    margin-top: 50px;
+    
+  }
+
+  .title {
+    width: 38px;
+    height: 17px;
+    font-family: "open Sans";
+    font-size: 14px;
+    font-weight: 500;
+    color: #c4c7dd;
+    position: relative;
+    top: 56px;
+    left: 98px;
+
+  }
+
+  .textf {
+    width: 595px;
+    height: 33px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: #a3a6ba;
+    position: relative;
+    top: 80px;
+    left: 98px;
+
+  }
+  ::placeholder {
+    width: 595px;
+    height: 33px;
+    font-family: "Open Sans";
+    font-size: 28px;
+    font-weight: bold;
+    color: #a3a6ba;
+  }
+
+  .options {
+    width: 38px;
+    height: 17px;
+    font-family: "open Sans";
+    font-size: 14px;
+    font-weight: 500;
+    color: #c4c7dd;
+    position: relative;
+    top: 160px;
+    left: 98px;
+  }
+
+.add {
+  width: 595px;
+  height: 24px;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: bold;
+  color:#a3a6ba ;
+  position: relative;
+  top: 180px;
+  left: 98px;
+}
+input {border: none;}
+
+input::placeholder {
+  border: none;
+}
+
+.access {
+  width: 57px;
+  height: 17px;
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-size: 14px;
+  color: #c4c7dd;
+  position: relative;
+  top: 350px;
+  left: 98px;
+}
+
+
+
+.btn1 {
+  width: 159px;
+  height: 160px;
+  border-radius: 8px;
+  border: solid 1px #f3f3f9;
+  background-color: #fff;
+  position: relative;
+  top: 380px;
+  left: 98px;
+}
+.pub{
+  width: 130px;
+  height: 16px;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #343643;
+  position: relative;
+  left:6px ;
+}
+.des {
+  width: 130px;
+  height: 18px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  text-align: center;
+  color: #a3a6ba;
+  position: relative;
+  left: 5px;
+
+}
+
+.btn2 {
+  width: 159px;
+  height: 160px;
+  border-radius: 8px;
+  border: solid 1px #f3f3f9;
+  background-color: #fff;
+  position: relative;
+  top: 380px;
+  left: 140px;
+}
+
+.op {
+  width: 131px;
+  height: 17px;
+  font-family: "Open Sans";
+  font-weight: 500;
+  color: #c4c7dd;
+  position: relative;
+  top: 520px;
+  left:98px ;
+  white-space: nowrap;
+}
+
+
+#date {
+  position: relative;
+  top: 500px;
+  right: 200px;
+  color: yellow;
+}
+
+.date {
+  position: relative;
+  top: 600px;
+}
+
+
+.my-custom-input {
+  position: relative;
+  top: 530px;
+  left: 98px;
+
+}
+
+.my-custom-input::placeholder {
+  width: 159px;
+  height: 24px;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: bold;
+  color: #a3a6ba;
+}
+.my-custom-input1::placeholder {
+  width: 159px;
+  height: 24px;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: bold;
+  color: #a3a6ba;
+}
+
+
+.my-custom-input1 {
+  position: relative;
+  top: 530px;
+  left: 130px;
+}

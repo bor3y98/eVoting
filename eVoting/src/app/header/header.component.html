@@ -1,0 +1,117 @@
+<div id="navbar">
+  <div class="container">
+    <div id="image">
+      <img src="../../assets/logo.svg">
+    </div>
+    <div class="link">
+      <ul>
+        <li class="active"><a href="#"><span>Explore</span></a></li>
+        <li><a href="#"><span>My Polls</span></a></li>
+        <li><a href="#"><span>About</span></a></li>
+      </ul>
+    </div>
+    <div class="btt"  routerLink="vote/create"><button id="mybtt"> Create poll</button></div>
+    <a href="" data-toggle="modal" data-target="#log-modal" *ngIf='isLoggedIn();else logOut' class="Logina">Login </a>
+    <ng-template #logOut>
+      <a href="" (click)='logout()'>Logout </a>
+
+    </ng-template>
+  </div>
+</div>
+
+
+<!-- Login Modal   -->
+<div class="modal" id="log-modal" data-backdrop="false" data-keyboard="false">
+
+  <!--model-->
+  <div class="modal-body">
+    <div class="form-wrapper">
+      <img src="../../assets/ic-close.svg" class="ic-close" data-dismiss="modal">
+      <img src="https://lh3.googleusercontent.com/d/1sgSh-U5tyBMI_fxDS4l1cTuf2M-ttSHv=s220?authuser=0" alt="logo"
+        class="ic-logo" />
+      <div class="login">
+        <p class="word">Log in into your account</p>
+        <p class="word2">Log in to manage your polls</p>
+      </div>
+
+      <form [formGroup]='signInForm' (submit)='login()' class='form-class'>
+        <div class="email">
+          <label htmlFor="email" class='label-class'>EMAIL</label><br>
+          <input (change)='onTextChange($event)' placeholder="Email" type="email" name="email" formControlName="email"
+            class='input-class'>
+          <div class="invalid-feedback" id='email-feedback'>This feild is requried</div>
+        </div>
+
+        <div class="password">
+          <label  class='label-class' htmlFor="password">PASSWORD</label><br>
+          <input (change)='onTextChange($event)' placeholder="Password" type="password" name="password"
+            class='input-class' formControlName="password">
+          <div class="invalid-feedback" id='password-feedback'>This feild is requried</div>
+        </div>
+        <a href="" class="forget">Forget?</a>
+        <div class="createAccount">
+          <button type="submit" class="btn">Log In</button>
+          <div class="invalid-feedback" id='login-feedback'></div>
+          <small class="acc">Don't have an account? <a href="" data-toggle="modal" data-target="#sign-up-modal">Get One
+              Now</a></small>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- signup -->
+
+  <div class="modal" id="sign-up-modal" data-backdrop="false" data-keyboard="false">
+    <div class="modal-body">
+
+      <div class="form-wrapper">
+        <img src="../../assets/ic-close.svg" class="ic-close" data-dismiss="modal">
+        <img src="https://lh3.googleusercontent.com/d/1sgSh-U5tyBMI_fxDS4l1cTuf2M-ttSHv=s220?authuser=0" alt="logo"
+          class="ic-logo" />
+        <div class="login">
+          <p class="word">Create a new account</p>
+          <p class="word2">join pollz to publish your poll</p>
+        </div>
+
+        <form [formGroup]='signUpForm' (submit)='signUp()' class='form-class'>
+
+          <div class="name">
+            <label  class='label-class' htmlFor="name">NAME</label><br>
+            <input placeholder="Name" type="name" name="name" formControlName="name" class='signup-input input-class'
+              (change)='onTextChange($event)'>
+            <div class="invalid-feedback">This feild is requried</div>
+
+          </div>
+
+
+          <div class="email">
+            <label  class='label-class' htmlFor="email">EMAIL</label><br>
+            <input type="email" name="email" formControlName="email" class='signup-input input-class'
+              (change)='onTextChange($event)'>
+            <div class="invalid-feedback">This feild is requried</div>
+
+          </div>
+          <div class="password">
+            <label  class='label-class' htmlFor="password">PASSWORD</label><br>
+            <input type="password" name="password" formControlName="password" class='signup-input input-class'
+              (change)='onTextChange($event)'>
+            <div class="invalid-feedback">This feild is requried</div>
+
+          </div>
+
+          <div class="password">
+            <label  class='label-class' htmlFor="password">CONFIRM PASSWORD</label><br>
+            <input type="password" name="password" formControlName="passwordConfirm" class='signup-input input-class'
+              (change)='onTextChange($event)'>
+            <div class="invalid-feedback">This feild is requried</div>
+
+          </div>
+
+          <div class="createAccount">
+            <div class="invalid-feedback" id='sign-up-feedback'></div>
+            <button type="submit" class="btn">Sign up</button>
+            <small class="acc">Already have an account? <a href="">Log in</a></small>
+          </div>
+        </form>
+      </div>
+    </div>

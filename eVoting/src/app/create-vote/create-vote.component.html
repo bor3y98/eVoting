@@ -1,0 +1,86 @@
+<form [formGroup]='createVoteForm' (submit)='createVote()'>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-xl-12">
+                <h2 class="heading">Create New Poll</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="text-muted">Title</p>
+                        <div class="form-group">
+                            <input type="text" class="form-control poll-title" placeholder="Enter poll title"
+                                formControlName='title'>
+                        </div>
+                        <p class="text-muted">Options</p>
+
+                        <div class="custom-file"
+                            *ngFor="let  option of createVoteForm.controls.options.controls;let i=index">
+
+                            <!-- <label class="custom-file-label" for="customFile">
+                                <span></span>
+                            </label> -->
+                            <input type="text" class="form-control poll-title" placeholder="Enter option"
+                                (change)='addOptionText(i,$event)'>
+
+                           <!-- <input type="file" class="photo" id="" (change)='fileUploads($event,i)'>  -->
+                            <label class="photo">
+                                <input type="file" class="" id="" (change)='fileUploads($event,i)'/>
+                            </label>
+                            
+
+                            <a class="delete" (click)=deleteOption(i) *ngIf="i!==0">
+                                <img src="../../assets/delete.png" />
+                            </a>
+                        </div>
+                        <button class="text-primary add-option my-5" (click)='addOption()'><span>+</span> Add
+                            Option</button>
+                        <p class="text-muted">Access</p>
+                        <div class="boxs-wrapper">
+                            <div class="form-check active">
+                                <img src="../../assets/ic-public-non3x.png" alt="">
+                                <input class="form-check-input" type="radio" name="isPublic" value="true"
+                                    formControlName='isPublic' (click)='changePublicStatus($event)'>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Public
+                                </label>
+                                <p class="text-muted">Anyone can vote</p>
+                            </div>
+                            <div class="form-check">
+                                <img src="../../assets/ic-private-non3x.png" alt="">
+                                <input class="form-check-input" type="radio" name="isPublic" value="false"
+                                    formControlName='isPublic' (click)='changePublicStatus($event)'>
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Private
+                                </label>
+                                <p class="text-muted">Only with link</p>
+                            </div>
+                        </div>
+
+                        <p class="text-muted mt-5">Operation dates</p>
+                        <div class="row">
+                            <div class="col-xl-3">
+                                <form class="datepicker-form">
+                                    <input id="startDate" class="datepicker form-control" type="text"
+                                        placeholder="Start Date">
+                                </form>
+                            </div>
+                            <div class="col-xl-3">
+                                <form class="datepicker-form">
+                                    <input id="endDate" class="datepicker form-control" type="text"
+                                        placeholder="End Date">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="white-box">
+        <div class="container">
+            <button type="submit" class="btn btn-primary my-5"><img src="../../assets/send.svg" alt="">
+                Publish poll</button>
+        </div>
+    </div>
+</form>

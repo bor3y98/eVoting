@@ -1,0 +1,46 @@
+<div className="Vote">
+    <form name="myform" onSubmit="validateForm()">
+    <div className="background">
+        <p className="word">Create New Poll</p>
+        <div className="Rectangles">
+            <p className="title">TITLE</p>
+            <input type="text" id="input1" className="etitle" placeholder="Enter Poll title..." />
+            <p className="option">OPTIONS</p>
+            <div className="pic">
+                <input id="input2" type="text" class="Nameoption" placeholder="Enter Option..." />
+                <div className="choosefile">
+                    <i className="fa fa-cloud-upload" ></i>
+                </div>
+            </div>
+
+            <div id="btn" className="add">
+                <button onClick="myFunction()"> + Add Option</button>
+            </div>
+        </div>
+    </div>
+    <p className="access">ACCESS</p>
+    <div className="twoRec">
+        <div className="r1">
+            <div className="pub">
+                <img src="ic-public-non.png" srcSet="ic-public-non@2x.png 2x,ic-public-non@3x.png 3x" className="ic-public-non" />
+                <p className="public">Public</p>
+                <p className="anyOne">Anyone can vote</p>
+            </div>
+        </div>
+
+        <div className="r2">
+            <img src="ic-private-non1.png" srcSet="ic-private-non@2x.png 2x,ic-private-non@3x.png 3x" className="ic-private-non1" />
+            <p className="private">Private</p>
+            <p className="only">Only with link</p>
+
+        </div>
+    </div>
+    <p className="operation">OPERATION DATES</p>
+    <div>
+        <div className="RectangleFooter">
+            <input className="Publish" type="submit" value="Publish Poll" />
+            <button className="preview">Preview</button>
+        </div>
+    </div>
+</form>
+</div>

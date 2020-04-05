@@ -1,0 +1,19 @@
+{
+  "name": "e-voting-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/bor3y98/e-voting-front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/bor3y98/e-voting-front/issues"
+  },
+  "homepage": "https://gitlab.com/bor3y98/e-voting-front#readme"
+}
